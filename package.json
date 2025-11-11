@@ -15,7 +15,12 @@
     "globals": "^16.5.0",
     "prettier": "^3.6.2",
     "sass": "^1.93.3",
-    "vite": "npm:rolldown-vite@7.1.14"
+    "sharp": "^0.34.5",
+    "svgo": "^4.0.0",
+    "vite": "npm:rolldown-vite@7.1.14",
+    "vite-plugin-html-inject": "^1.1.2",
+    "vite-plugin-image-optimizer": "^2.0.3",
+    "vite-plugin-minify": "^2.1.0"
   },
   "dependencies": {
     "D": "^1.0.0",
