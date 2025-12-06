@@ -268,6 +268,7 @@
           color: #60d39c;
 
           &::before {
+            margin-right: 3px;
             background: url('/assets/icons/green-arrow-icon.svg');
           }
         }
@@ -276,6 +277,7 @@
           color: #e35454;
 
           &::before {
+            margin-right: 3px;
             background: url('/assets/icons/red-arrow-icon.svg');
           }
         }
