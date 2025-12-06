@@ -8,28 +8,27 @@ export default defineConfig({
   base: '/coca/',
   server: {
     port: 3000,
-    // open: true,
   },
   publicDir: './src/assets',
   build: {
     outDir: '../dist',
     emptyOutDir: true,
-    rolldownOptions: {
+    rollupOptions: {
       input: {
         main: './src/index.html',
+        about: './src/about.html',
+        blog: './src/blog.html',
         pricing: './src/pricing.html',
+        async: './src/async.html',
         contact: './src/contact.html',
       },
     },
   },
   plugins: [
     injectHTML(),
-    ViteMinifyPlugin({}),
+    ViteMinifyPlugin(),
     ViteImageOptimizer({
       png: {
-        quality: 80,
-      },
-      jpeg: {
         quality: 80,
       },
       jpg: {

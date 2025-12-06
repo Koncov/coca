@@ -1,7 +1,7 @@
 .footer {
   padding: 112px 0 58px;
   color: #fff;
-  background-color: var(--black-bg-color);
+  background-color: var(--overview-bg-color);
 
   @include mobile {
     padding-top: 62px;
@@ -73,7 +73,7 @@
 
     &-info {
       @include tablet {
-        @include flex-align-center;
+        @include flex-aling-center;
         gap: 30px;
       }
 
@@ -129,6 +129,8 @@
       gap: 40px 60px;
       flex-wrap: wrap;
       justify-content: center;
+      margin: 0 auto;
+      max-width: 300px;
     }
 
     @include small-mobile {
@@ -145,6 +147,8 @@
 
     @include mobile {
       min-width: 143px;
+      text-align: center;
+      cursor: pointer;
     }
   }
 
@@ -195,7 +199,7 @@
     }
 
     &-lists {
-      @include flex-align-center;
+      @include flex-aling-center;
       gap: 72px;
 
       @include tablet {
@@ -255,7 +259,7 @@
 
   &__social {
     &-list {
-      @include flex-align-center;
+      @include flex-aling-center;
       gap: 24px;
 
       @include tablet {
@@ -276,5 +280,13 @@
     font-weight: 500;
     line-height: 143%;
     color: #fff;
+  }
+
+  summary {
+    list-style: none;
+
+    @include mobile {
+      list-style: revert;
+    }
   }
 }

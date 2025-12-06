@@ -1,10 +1,12 @@
-import '/scss/pricing.scss';
+import '../scss/pricing.scss'
 
 // components
-import { useTheme } from './components/theme.js';
-import { useBurger } from './components/burger.js';
-import { usePriceSwitcher } from './components/pricing/priceSwticher.js';
+import { useTheme } from './components/theme'
+import { useBurger } from './components/burger'
+import { usePriceSwitcher } from './components/swticher'
+import { useFooterAccordion } from './components/accordion'
 
-useTheme();
-useBurger();
-usePriceSwitcher();
+useTheme()
+useBurger()
+usePriceSwitcher()
+useFooterAccordion()

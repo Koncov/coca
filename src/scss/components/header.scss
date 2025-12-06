@@ -1,6 +1,5 @@
 .header {
   padding: 26px 0 22px;
-  background-color: transparent;
 
   @include mobile {
     padding: 22px 0 18px;
@@ -11,7 +10,6 @@
   }
 
   &__logo {
-    position: relative;
     z-index: var(--z-index-4);
 
     & svg {
@@ -21,45 +19,45 @@
 
       & path {
         &:not(:last-child) {
-          fill: var(--logo-color-text);
+          fill: var(--neutral-color-text);
         }
       }
 
       & circle {
-        fill: var(--logo-color-circle);
+        fill: var(--neutral-color-circle);
       }
     }
   }
 
   &__right {
-    @include flex-align-center;
+    @include flex-aling-center;
     gap: 111px;
 
     @include tablet {
       gap: 60px;
-    }
 
-    @include small-tablet {
-      position: fixed;
-      top: 0;
-      left: -100vw;
-      z-index: var(--z-index-3);
-      flex-direction: column;
-      justify-content: center;
-      width: 80dvw;
-      height: 100dvh;
-      background-color: var(--neutral-color-10);
-      opacity: 0;
-      visibility: hidden;
-      transition:
-        left var(--transition),
-        opacity var(--transition),
-        visibility var(--transition);
+      @include small-tablet {
+        position: fixed;
+        top: 0;
+        left: -100vw;
+        z-index: var(--z-index-3);
+        flex-direction: column;
+        justify-content: center;
+        width: 80dvw;
+        height: 100dvh;
+        background-color: var(--neutral-color-10);
+        opacity: 0;
+        visibility: hidden;
+        transition:
+          left var(--transition),
+          opacity var(--transition),
+          visibility var(--transition);
 
-      &--visible {
-        left: 0;
-        opacity: 1;
-        visibility: visible;
+        &--visible {
+          left: 0;
+          opacity: 1;
+          visibility: visible;
+        }
       }
     }
   }
@@ -70,7 +68,7 @@
     width: 63px;
     height: 27px;
     background-color: var(--neutral-color-130);
-    transform: translateY(8px);
+    transform: translateY(7px);
     transition: background-color var(--transition);
 
     &::before {
@@ -93,15 +91,10 @@
       top: -24px;
       left: 50%;
       font-weight: 600;
-      line-height: 150%;
+      line-height: 24px;
       text-align: center;
       color: var(--neutral-color-140);
       transform: translateX(-50%);
-
-      @include small-tablet {
-        top: -28px;
-        font-size: 20px;
-      }
     }
 
     &-checkbox {
@@ -121,7 +114,7 @@
 
 .nav {
   &__list {
-    @include flex-align-center;
+    @include flex-aling-center;
     gap: 32px;
 
     @include small-tablet {
@@ -141,7 +134,6 @@
     color: var(--neutral-color-100);
 
     @include small-tablet {
-      font-size: 20px;
       line-height: 200%;
     }
 
@@ -149,8 +141,9 @@
       content: '';
       position: absolute;
       right: 0;
-      bottom: -5px;
+      bottom: -3px;
       left: 0;
+      width: 100%;
       height: 1px;
       background-color: var(--neutral-color-100);
       opacity: 0;

@@ -10,38 +10,52 @@
     gap: 30px;
     max-width: 1110px;
 
-    @include small-tablet {
+    @include tablet {
       flex-direction: column;
-      justify-content: center;
-      text-align: center;
+      max-width: 800px;
     }
   }
 
   &__title {
+    max-width: 323px;
     font-weight: 500;
-    line-height: 178%;
+    line-height: 32px;
     color: var(--neutral-color-150);
+
+    @include tablet {
+      max-width: 550px;
+      text-align: center;
+    }
 
     &-num {
       display: block;
       margin-bottom: 16px;
       font-weight: 600;
-      letter-spacing: -0.04em;
+      font-size: 56px;
+      line-height: 120%;
+      letter-spacing: -2px;
       color: var(--neutral-color-100);
 
-      @include small-mobile {
-        margin-bottom: 10px;
+      @include mobile {
+        margin-bottom: 0;
       }
     }
   }
 
   &__list {
-    @include flex-all-center;
+    @include flex-aling-center;
     gap: 10px 30px;
     flex-wrap: wrap;
+    justify-content: end;
+    margin-left: -40px;
 
-    @include mobile {
-      gap: 10px;
+    @include tablet {
+      justify-content: center;
+      margin-left: 0;
+    }
+
+    @include small-tablet {
+      gap: 15px;
     }
   }
 

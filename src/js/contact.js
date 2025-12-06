@@ -1,10 +1,12 @@
-import '/scss/contact.scss';
+import '../scss/contact.scss'
 
 // components
-import { useTheme } from './components/theme.js';
-import { useBurger } from './components/burger.js';
-import { usePhone } from './components/contact/phone.js';
+import { useTheme } from './components/theme'
+import { useBurger } from './components/burger'
+import { usePhone } from './components/phone'
+import { useFooterAccordion } from './components/accordion'
 
-useTheme();
-useBurger();
-usePhone();
+useTheme()
+useBurger()
+usePhone()
+useFooterAccordion()

@@ -44,7 +44,7 @@
   }
 
   &__rating {
-    @include flex-align-center;
+    @include flex-aling-center;
     gap: 8px;
     margin-bottom: 19px;
 
@@ -61,7 +61,7 @@
       display: inline-block;
       width: 115px;
       height: 77px;
-      background: url('/assets/icons/quotes-icon.svg');
+      background: url('../assets/icons/quotes-icon.svg');
       transform: translateY(15px);
 
       @include mini-desktop {
@@ -88,7 +88,7 @@
     }
 
     &-author {
-      @include flex-align-center;
+      @include flex-aling-center;
       gap: 24px;
       font-style: normal;
 
@@ -112,7 +112,7 @@
   }
 
   &__btns {
-    @include flex-align-center;
+    @include flex-aling-center;
     gap: 16px;
     justify-content: flex-end;
     transform: translateY(-40px);
